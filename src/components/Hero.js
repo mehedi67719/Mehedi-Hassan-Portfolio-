@@ -13,11 +13,11 @@ const Hero = () => {
         <div className="space-y-10">
           <div>
             <h2 className="text-xl text-yellow-400 mb-2 font-bold tracking-widest uppercase" data-aos="fade-right" data-aos-delay="200">HELLO, I'M</h2>
-            <div className="flex items-center gap-4 mb-4">
+            <div className="flex flex-col md:flex-row md:items-center gap-4 mb-4">
               <h1 className="text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent tracking-tight" data-aos="fade-right" data-aos-delay="300">
                 Mehedi <span className="text-yellow-300">Hassan</span>
               </h1>
-              <span className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black px-4 py-1.5 rounded-full text-sm font-bold shadow-lg shadow-yellow-500/40 whitespace-nowrap animate-pulse">
+              <span className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black px-4 py-1.5 rounded-full text-sm font-bold shadow-lg shadow-yellow-500/40 whitespace-nowrap animate-pulse self-start md:self-auto">
                 Available for work
               </span>
             </div>
@@ -75,7 +75,7 @@ const Hero = () => {
             <img 
               src="/Mehedi Hassan full.jpg" 
               alt="Mehedi Hassan Profile"
-              className="relative w-80 h-96 object-cover rounded-2xl border-4 border-yellow-500 z-10 transition-transform duration-700 group-hover:scale-105 shadow-2xl"
+              className="relative w-80 h-96 object-cover rounded-2xl border-4 border-yellow-500 z-10 transition-transform duration-700 group-hover:scale-105 shadow-2xl mx-auto"
             />
           </div>
         </div>
