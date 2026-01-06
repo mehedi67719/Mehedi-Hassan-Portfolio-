@@ -2,31 +2,31 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center pt-16 pb-16 bg-gradient-to-br from-gray-900 via-black to-gray-900 relative overflow-hidden" data-aos="fade-up">
+    <section id="home" className="min-h-screen flex items-center pt-20 pb-16 bg-gradient-to-br from-gray-900 via-gray-950 to-black relative overflow-hidden" data-aos="fade-up">
           {/* Animated background elements */}
           <div className="absolute inset-0 z-0">
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-            <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-yellow-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
-            <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-yellow-700 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-500 rounded-full mix-blend-multiply filter blur-2xl md:blur-3xl opacity-15 md:opacity-20 animate-blob"></div>
+            <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-yellow-600 rounded-full mix-blend-multiply filter blur-2xl md:blur-3xl opacity-15 md:opacity-20 animate-blob animation-delay-2000"></div>
+            <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-yellow-700 rounded-full mix-blend-multiply filter blur-2xl md:blur-3xl opacity-15 md:opacity-20 animate-blob animation-delay-4000"></div>
           </div>
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 px-6 items-center">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 px-6 items-center">
         <div className="space-y-10">
           <div>
-            <h2 className="text-xl text-yellow-400 mb-2 font-bold tracking-widest uppercase" data-aos="fade-right" data-aos-delay="200">HELLO, I'M</h2>
+            <h2 className="text-lg md:text-xl text-yellow-400 mb-2 font-bold tracking-widest uppercase" data-aos="fade-right" data-aos-delay="200">HELLO, I'M</h2>
             <div className="flex flex-col md:flex-row md:items-center gap-4 mb-4">
-              <h1 className="text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent tracking-tight" data-aos="fade-right" data-aos-delay="300">
+              <h1 className="text-4xl md:text-7xl font-extrabold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent tracking-tight" data-aos="fade-right" data-aos-delay="300">
                 Mehedi <span className="text-yellow-300">Hassan</span>
               </h1>
               <span className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black px-4 py-1.5 rounded-full text-sm font-bold shadow-lg shadow-yellow-500/40 whitespace-nowrap animate-pulse self-start md:self-auto">
                 Available for work
               </span>
             </div>
-            <p className="text-xl text-gray-300 mb-8 max-w-xl leading-relaxed" data-aos="fade-right" data-aos-delay="400">
+            <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-lg md:max-w-xl leading-relaxed font-light" data-aos="fade-right" data-aos-delay="400">
               A Frontend & MERN Stack Developer from Bangladesh, passionate about building clean, responsive, and user-friendly web applications.
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="500">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4" data-aos="fade-up" data-aos-delay="500">
             <a 
               href="Mehedi Hassan resume.pdf" 
               className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black px-8 py-4 rounded-xl font-bold hover:from-yellow-400 hover:to-yellow-500 transition-all duration-300 flex items-center justify-center gap-2 shadow-xl shadow-yellow-500/40 hover:shadow-yellow-500/50 transform hover:-translate-y-1 hover:scale-105"
@@ -68,14 +68,14 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center order-first md:order-last">
           <div className="relative group">
-            <div className="absolute -inset-4 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-2xl blur opacity-40 group-hover:opacity-70 transition duration-700"></div>
-            <div className="absolute -inset-4 bg-gradient-to-l from-yellow-600 to-yellow-500 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-700 delay-150"></div>
+            <div className="absolute -inset-4 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-700"></div>
+            <div className="absolute -inset-4 bg-gradient-to-l from-yellow-600 to-yellow-500 rounded-2xl blur opacity-15 group-hover:opacity-30 transition duration-700 delay-150"></div>
             <img 
               src="/Mehedi Hassan full.jpg" 
               alt="Mehedi Hassan Profile"
-              className="relative w-80 h-96 object-cover rounded-2xl border-4 border-yellow-500 z-10 transition-transform duration-700 group-hover:scale-105 shadow-2xl mx-auto"
+              className="relative w-64 h-64 md:w-80 md:h-96 object-cover rounded-full md:rounded-2xl border-4 border-yellow-500 z-10 transition-transform duration-700 group-hover:scale-105 shadow-2xl mx-auto"
             />
           </div>
         </div>
